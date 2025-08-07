@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#000 40%, #111);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: sans-serif;
+}
+.sky {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+button#disparar {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #ffffff20;
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s;
+}
+button#disparar:hover {
+    background-color: #ffffff40;
+}
+.estrela {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 2px white;
+    animation: queda 1s linear forwards;
+}
+@keyframes queda {
+    from {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate(-400px, 400px);
+        opacity: 1;
+    }
+}

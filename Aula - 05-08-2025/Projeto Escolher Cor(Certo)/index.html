@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Controle de RGBA</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>🌈 Controle de RGBA 🌈</h1>
+            <div class="controls">
+                <div class="color-preview">
+                    <div id="colorDisplay"></div>
+                    <div id="colorCode">#FFFFFF</div>
+                </div>
+                <div class="control-group">
+                    <label for="colorPicker">Seletor de Cor:</label>
+                    <input type="color" id="colorPicker" value="#ffffff" />
+                </div>
+                <div class="rgba-controls">
+                    <div class="control-group">
+                        <label for="redRange">Vermelho: <span id="redValue">
+                            255</span></label>
+                        <input type="range" id="redRange" min="0" max="255" 
+                        value="255" class="red-slider" />
+                    </div>
+                    <div class="control-group">
+                    <label for="greenRange">Verde: <span id="greenValue">
+                        255</span></label>
+                    <input type="range" id="greenRange" min="0" max="255" 
+                    value="255" class="green-slider" />
+                </div>
+                <div class="control-group">
+                    <label for="blueRange">Azul: <span id="blueValue">
+                        255</span></label>
+                    <input type="range" id="blueRange" min="0" max="255" 
+                    value="255" class="blue-slider" />
+            </div>
+            <div class="control-group">
+                <label for="alphaRange">Transparência: 
+                    <span id="alphaValue">100</span>%</label>
+                <input type="range" id="alphaRange" min="0" 
+                max="100" value="100" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="tela"></div>
+<script src="script.js"></script>
+    </body>
+</html>

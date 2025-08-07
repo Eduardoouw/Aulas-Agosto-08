@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Loja Fictícia</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Mini Loja</h1>
+            <select id="categoria-filtro">
+                <option value="todas">Todas as Categorias</option>
+                <option value="camisetas">camisetas</option>
+                <option value="acessorios">Acessórios</option>
+            </select>
+        </header>
+        <main>
+        <div id="produtos" class="produtos"></div>
+        <aside id="carrinho">
+            <h2>carrinho</h2>
+            <ul id="itens-carrinho"></ul>
+            <button id="fechar-carrinho">FECHAR</button>
+            <p>Total: R$ <span id="total">0.00</span></p>
+        </aside>
+        </main>
+        <script src="script.js"></script>
+        <div id="mensagem-final" hidden>
+            <h2>Obrigado!</h2>
+            <p>Seu carrinho foi fechado!</p>
+        </div>
+    </body>
+</html>
