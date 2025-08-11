@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Cardápio de comidas, bebidas e sobremesas com preços acessíveis">
+        <title>Cárdapio de Comidas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>🍕 Cardapio da Pizzaria 🍕</h1> <!-- MUDAR!!-->
+            <div class="menu-toggle" id="menuToggle" aria-label="Abrir Menu de Navegação">☰</div>
+            <button id="toggleTheme" title="Alterar tema">🌙</button>
+        </header>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#comidas"></a></li>
+                <li><a href="#bebidas"></a></li>
+                <li><a href="#sobremesas"></a></li>
+            </ul>
+        </nav>
+        <main>
+            <selection id="comidas" class="cardapio-selection">
+                <h2>Comidas</h2>
+                <div class="item">
+                    <h3>Pizza de Calabresa</h3>
+                    <p>Uma Pizza de Calabresa com 4 Queijo e Borda Recheada</p>
+                    <img src="/img/1.jpg" alt="Minha Imagem"/>
+                    <span>R$: 36,99</span>
+                </div>
+                <div class="item">
+                    <h3>Pizza de Pepperoni</h3>
+                    <p>Uma Pizza de Pepperoni Tamanho Familía e com Borda Dupla</p>
+                    <img src="/img/2.jpg" alt="Minha Imagem"/>
+                    <span>R$: 43,99</span>
+                </div>
+                <div class="item">
+                    <h3>Pizza de Mussarela</h3>
+                    <p>Uma Pizza de Mussarela para 3 Pessoas com Bastante Queijo e com Adicional do Molho da Casa</p>
+                    <img src="/img/3.jpg" alt="Minha Imagem"/>
+                    <span>R$: 35,99</span>
+                </div>
+            </selection>
+
+            <selection id="bebidas" class="cardapio-selection">
+                <h2>Bebidas</h2>
+                <div class="item">
+                    <h3>Coca Cola</h3>
+                    <p>Uma Coca Cola-Zero 300ML para Aproveitar seu Lanche a Vontade</p>
+                    <img src="/img/5.jpg" alt="Minha Imagem"/>
+                    <span>R$: 5,00</span>
+                </div>
+                <div class="item">
+                    <h3>Cerveja</h3>
+                    <p>Uma Cerveja bem Gelada para Curtir com a Familía sem Ficar com Vontade</p>
+                    <img src="/img/4.jpg" alt="Minha Imagem"/>
+                    <span>R$: 8,00</span>
+                </div>
+                <div class="item">
+                    <h3>Água</h3>
+                    <p>Uma Água bem Simples para qum Dezeja Degustar seu Lanche da Melhor Forma</p>
+                    <img src="/img/1.jpg" alt="Minha Imagem"/>
+                    <span>R$: 3,00</span>
+                </div>
+            </selection>
+            
+            <selection id="sobremesas" class="cardapio-selection">
+                <h2>Sobremesas</h2>
+                <div class="item">
+                    <h3>Pizza de Morango com Chocolate</h3>
+                    <p>Uma Pizza de Morango com Chocolate da Casa e com Borda Recheada de Cauda de Caramelo</p>
+                    <img src="/img/1.jpg" alt="Minha Imagem"/>
+                    <span>R$: 22,99</span>
+                </div>
+                <div class="item">
+                    <h3>Pizza de Romeu e Julieta</h3>
+                    <p>Uma Pizza Bem a moda da Casa com Borda Dupla e Recheio Misto</p>
+                    <span>R$: 24,99</span>
+                </div>
+                <div class="item">
+                    <h3>Pizza Secreta</h3>
+                    <p>Esta Pizza pode ser Modificada pelo cliente e ele pode adicionar ingredientes que vão custar entre 1R$ a 50 Centavos (cada)</p>
+                    <img src="/img/1.jpg" alt="Minha Imagem"/>
+                    <span>R$: 26,99</span>
+                </div>
+            </selection>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

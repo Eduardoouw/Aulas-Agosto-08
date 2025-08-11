@@ -1,0 +1,147 @@
+:root {
+    --bg: #fff8f0;
+    --text: #222;
+    --card: #fff;
+    --primary: #c0392b;
+  }
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #eee;
+    --card: #2a2a2a;
+    --primary: #e74c3c;
+  }
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s ease;
+  }
+  header {
+    background: linear-gradient(#ff0000, #ffa600);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .menu-toggle {
+    font-size: 19px;
+    cursor: absolute;
+    display: none;
+  }
+  #toggleTheme {
+    font-size: 19px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: relative;
+    align-items: end;
+    justify-content: end;
+  }
+  /* MENU */
+  nav {
+    background: var(--card);
+    padding: 10px 20px;
+    color: black;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    color: black;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    color: black;
+  }
+  /* Imagens */
+  img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  img:hover {
+    transform: scale(1.06);
+    transition: 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 5);
+  }
+  /* CARDÁPIO */
+  main {
+    padding: 20px;
+  }
+  .cardapio-section {
+    margin-bottom: 30px;
+}
+  .cardapio-section h2 {
+    margin-bottom: 15px;
+    color: var(--primary);
+  }
+  .item {
+    background: linear-gradient(#ffeed4, #ffffff);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  .item:hover {
+    box-shadow: 0 4px 12px rgba(187, 123, 5, 0.6);
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  .item h3 {
+    margin: 0;
+  }
+  .item span {
+    font-weight: bold;
+    float: right;
+  }
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+      color: #fff;
+    }
+    nav {
+      display: none;
+    }
+    nav.active {
+      display: block;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+/* Estilos padrão (tema claro) */
+body {
+  background-color: #fff;
+  color: #333;
+}
+/* Estilos para o tema escuro */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+.dark header {
+  background-color: #222;
+}
+.dark nav {
+  background-color: #000000;
+}
+.dark .cardapio-section {
+  background-color: #555;
+}
+.dark .item {
+  border-color: #666;
+}
+
+  
